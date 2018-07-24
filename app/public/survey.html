@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap 3.3 CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>IzzleNizzle's FriendFinder</title>
+
+  <!-- Some Internal Styles -->
+  <style>
+    body {
+      margin-top: 50px;
+    }
+    #match-photo {
+      height: 350px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar Begin -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Friend Finder</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li class="active">
+            <a href="/survey">Survey</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+                       <li>
+                           <a href="#" id="userName">Default</a>
+                       </li>
+                       <li id="btnLogOut">
+                           <a href="#">Sign Out</a>
+                       </li>
+                   </ul> -->
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <div class="container">
+
+    <h2>Your Magical Survey</h2>
+    <hr>
+
+    <h3>
+      <strong>But first, a little bit about You</strong>
+    </h3>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Link to your Photo (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <h3>
+      <strong>Question 1</strong>
+    </h3>
+    <h4>How well do you love sunsets?</h4>
+    <select class="chosen-select" id="q1">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 2</strong>
+    </h3>
+    <h4>How often do you stop to smell the roses?</h4>
+    <select class="chosen-select" id="q2">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+
+    <h3>
+      <strong>Question 3</strong>
+    </h3>
+    <h4>How often do you smile at your neighbor?</h4>
+    <select class="chosen-select" id="q3">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 4</strong>
+    </h3>
+    <h4>Do you enjoy it when it rains?</h4>
+    <select class="chosen-select" id="q4">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 5</strong>
+    </h3>
+    <h4>Do you enjoy snowy weather?</h4>
+    <select class="chosen-select" id="q5">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 6</strong>
+    </h3>
+    <h4>Do you enjoy the mountains?</h4>
+    <select class="chosen-select" id="q6">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h3>
+      <strong>Question 7</strong>
+    </h3>
+    <h4>Do you enjoy the ocean?</h4>
+    <select class="chosen-select" id="q7">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 8</strong>
+    </h3>
+    <h4>Do you enjoy the desert?</h4>
+    <select class="chosen-select" id="q8">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 9</strong>
+    </h3>
+    <h4>How well do you love fast food?</h4>
+    <select class="chosen-select" id="q9">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 10</strong>
+    </h3>
+    <h4>How well do you love fine dining?</h4>
+    <select class="chosen-select" id="q10">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+      Submit</button>
+
+    <br>
+    <br>
+
+    <!-- 
+7. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+   * The modal should display both the name and picture of the closest match.  -->
+
+    <!-- 
+  This is how you toggle the modal using jQuery;
+  $('#myModal').modal();
+-->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Your Perfect Match!!!</h4>
+          </div>
+          <div class="modal-body">
+            <h2 id='match-name'></h2>
+            <img src="" alt="#" id='match-photo'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- END Modal -->
+
+  </div>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+    $('#submit').on('click', function () {
+      var object = {
+        name: $('#name').val().trim(),
+        photo: $('#photo').val().trim(),
+        scores: [
+          parseFloat($('#q1').val()),
+          parseFloat($('#q2').val()),
+          parseFloat($('#q3').val()),
+          parseFloat($('#q4').val()),
+          parseFloat($('#q5').val()),
+          parseFloat($('#q6').val()),
+          parseFloat($('#q7').val()),
+          parseFloat($('#q8').val()),
+          parseFloat($('#q9').val()),
+          parseFloat($('#q10').val())
+        ]
+      }
+      $.post("https://lit-coast-80381.herokuapp.com/api/friends", object, function (data) {
+        console.log('sucessfull request');
+        console.log(data.name);
+        // manipulate dom to input information from the server response on winner
+        $('#match-name').text(data.name);
+        $('#match-photo').attr('src', data.photo)
+        // turns modal on
+        $('#myModal').modal();
+        
+      });
+    });
+  </script>
+
+</body>
+
+</html>
